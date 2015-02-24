@@ -16,6 +16,15 @@
 	var loadTimeControl = true;
 	var api_key = null;
     //YAHOO.util.Event.addListener(window, 'load', YAHOO.paymo.init, YAHOO.paymo, true);
+    
+    var frm = frames['frame'].document;
+	var otherhead = frm.getElementsByTagName("head")[0];
+	var link = frm.createElement("link");
+	link.setAttribute("rel", "stylesheet");
+	link.setAttribute("type", "text/css");
+	link.setAttribute("href", "style.css");
+	otherhead.appendChild(link);
+
     </script>
 
 </head>
